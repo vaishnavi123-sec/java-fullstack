@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>forms dispaly</title>
+    <link rel="stylesheet" href="external.css">
+    <style>
+      input{
+        font: italic;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+
+    <form action="">
+      <fieldset>
+        <legend> <h2> user input</h2></legend>
+        <lable>Name :</lable>
+        <input type="text" placeholder="enter your name" required>
+        <br>
+        <br>
+        <lable>email :</lable>
+        <input type="email" value="abc@gmail.com"  required>
+        <br>
+        <br>
+        <lable>phone</lable>
+        <input type="tel" minlength="10"  maxlength="10" required >
+        <br>
+        <br>
+        <lable>password :</lable>
+        <input type="password" maxlength="10" minlength="8" required>
+        <br>
+        <br>
+        <lable>gender</lable>
+        <input type="radio" name="1">male
+        <input type="radio" name="1" checked>female
+      </fieldset>
+        <br>
+        <br>
+        <lable>languages</lable>
+        <input type="checkbox">english
+        <input type="checkbox">hindi
+        <input type="checkbox">marathi
+        <br>
+        <br>
+        <lable>feedback</lable>
+        <textarea name="feedback" rows="10" cols="20" required></textarea>
+        <br>
+        <br>
+        <lable>country</lable>
+        <select> 
+            <option>INDIA</option>
+            <option>USA</option>
+            <option>CANADA</option>
+            
+        </select>
+        <br>
+        <br>
+        <lable>skill set</lable>
+        <input type="text" list="skill set" id ="skills" name="skill set">
+        <datalist id="skill set">
+            <option value="java">java</option>
+            <option value="python">python</option>
+            <option value="c++">c++</option>
+        </datalist>
+        <br>
+        <br>
+        <button type="submit">submit</button>
+        <br>
+        <br>
+      
+        
+    </form>
+  </body>
+</html>
